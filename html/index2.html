@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-color: #1d566e;
+        }
+
+        .log {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 300px;
+            padding: 40px;
+            background-color: #191919;
+            border-radius: 10px;
+            box-shadow: 6px 3px 10px black;
+        }
+
+        .log h1 {
+            color: white;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .log input[type="email"],
+        .log input[type="password"] {
+            border: 0;
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            border: 2px solid #3498db;
+            text-align: center;
+            background: none;
+            padding: 14px 10px;
+            border-radius: 24px;
+            color: white;
+            outline: none;
+            transition: 0.25s ease;
+        }
+
+        .log input[type="email"]:hover,
+        .log input[type="password"]:hover {
+            width: 280px;
+            border-color: #2ece71;
+        }
+
+        .log input[type="submit"] {
+            cursor: pointer;
+            border: 2px solid #2ece71;
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            text-align: center;
+            background: none;
+            padding: 14px 40px;
+            border-radius: 24px;
+            color: white;
+            outline: none;
+            transition: 0.25s ease;
+        }
+
+        .log input[type="submit"]:hover {
+            background-color: #2ece71;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="#" class="log">
+        <h1>sign up</h1>
+        <input type="email" name="useer" id="useer" placeholder="Enter Your Email id" required>
+        <input type="password" name="pass" id="pass" placeholder="Enter your password" required>
+        <input type="password" name="pass" id="pass" placeholder="Repeat your password" required>
+        <input type="submit" value="SIGN UP">
+    </form>
+
+</body>
+
+</html>

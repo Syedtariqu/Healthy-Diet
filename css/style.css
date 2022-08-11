@@ -1,0 +1,300 @@
+/* fonts  */
+@font-face {
+    font-family: "Raleway-regular";
+    src: url(../fonts/Raleway-Regular.ttf)
+}
+
+@font-face {
+    font-family: "Raleway-medium";
+    src: url(../fonts/Raleway-Medium.ttf)
+}
+
+@font-face {
+    font-family: "Raleway-bold";
+    src: url(../fonts/Raleway-Bold.ttf)
+}
+
+@font-face {
+    font-family: "Raleway-extrabold";
+    src: url(../fonts/Raleway-ExtraBold.ttf)
+}
+
+@font-face {
+    font-family: "Raleway-semibold";
+    src: url(../fonts/Raleway-SemiBold.ttf)
+}
+
+@font-face {
+    font-family: "Raleway-black";
+    src: url(../fonts/Raleway-Black.ttf)
+}
+
+
+/* colors  */
+
+:root {
+    --primary: #EEBF00;
+    --secondary: #232B38;
+    --ternary: #6C6C6C;
+    --danger: #FE4545;
+    --pure: #FEFEFE;
+    --light: #F0F0F0;
+    --heaven: #FFFFFF;
+    --footer: #2D333F;
+}
+
+/* Custom Classes */
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.magic-shadow {
+    position: relative;
+    background: var(--heaven);
+}
+
+.magic-shadow::after {
+    content: "";
+    width: 100%;
+    height: 69px;
+    background-image: url(/Resturent/icons/shadow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: -22px;
+    z-index: -1;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-heading {
+    font-family: "Raleway-bold";
+    text-align: center;
+    Position: relative;
+    margin-bottom: 5rem;
+}
+
+.section-heading:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-image: url(/icons/hr.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: -40px;
+}
+
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header.topbar {
+    background: var(--secondary);
+    color: var(--pure);
+    font-family: "Raleway-semibold";
+    padding: 0.75rem 0;
+    height: 47px;
+}
+
+.container {
+    width: 100%;
+    padding: o 15px;
+    margin: 0 auto;
+
+}
+
+header.topbar .auth>div a {
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+header.topbar .icons a {
+    margin-right: 0.6rem;
+    margin-left: 0.6rem;
+}
+
+header.topbar .auth .divider {
+    padding: 0 1rem;
+}
+
+header.topbar .auth>div img {
+    margin-right: 0.35rem;
+}
+
+header.topbar .icons {
+    margin-left: 50px;
+}
+
+header.topbar .auth {
+    margin-right: 50px;
+}
+
+.about-food {
+    height: 100vh;
+    background: linear-gradient(rgba(35, 43, 56, 0.9),
+            rgba(35, 43, 56, 0.4)), url(/img/pickled-stardust-WTDiM3nezLQ-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+
+.about-food h1 {
+    color: var(--pure);
+    position: relative;
+    top: 30px;
+}
+
+.about-food {
+    height: 950px;
+}
+.about-food .container{
+    height:auto;
+}
+.about-food .form-1 {
+    width: 50%;
+    margin-left: 30px;
+}
+
+.about-food .form-1 h2 {
+    color: var(--heaven);
+    font-family: "Raleway-bold";
+    margin-bottom: 10px;
+}
+
+.about-food .form-1 h2 span {
+    color: var(--danger);
+}
+
+.about-food .form-1 .btn {
+    position: relative;
+    left: 488px;
+    bottom: -8px;
+}
+
+.btn {
+    padding: 0.75rem 1.75rem;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    line-height: 0.8;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    border: 1px solid transparent;
+    margin-left: 20px;
+
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: var(--heaven);
+}
+
+.btn-primary:hover {
+    background: var(--heaven);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.btn-secondary {
+    background: var(--footer);
+    color: var(--heaven);
+}
+
+.btn-secondary:hover {
+    background: var(--heaven);
+    color: var(--footer);
+    border: 1px solid var(--footer);
+}
+
+.about-food .form-1 .btn .fa-plus {
+    margin-right: 5px;
+}
+
+.about-food .form-1 select {
+    padding: .75rem .75rem;
+    border-radius: 10px;
+    line-height: 0.8;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    border: 1px solid transparent;
+    margin-left: 20px;
+    width: 100%;
+    font-family: "Raleway-semibold";
+}
+
+.about-food .form-1 select:focus {
+    outline: none;
+    border: none;
+}
+
+.about-food .form-1 select option {
+    padding: 2.75rem 2.75rem;
+    border-radius: 10px;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.about-food .form-1 #total {
+    height: 200px;
+    position: absolute;
+    right: 200px;
+    top: 188px;
+    border-radius: 10px;
+    font-family: "Raleway-black";
+    padding: 15px 20px;
+    color: var(--pure);
+}
+
+.about-food .form-1 #result {
+width: 100%;
+    border-radius: 10px;
+    font-family: "Raleway-ExtraBold";
+    padding: 15px 20px;
+    color: var(--pure);
+    margin-top: 20px;
+}
+.about-food .form-1 .other{
+    color: var(--primary);
+}
